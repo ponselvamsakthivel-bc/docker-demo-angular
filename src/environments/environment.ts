@@ -4,28 +4,28 @@ export const environment = {
     uri: {
       api: {
         isApiGateWayEnabled: false,
-        security: 'http://ppg-sand-security-alb-216831028.eu-west-2.elb.amazonaws.com',
-        postgres: 'http://ppg-sand-core-alb-467822619.eu-west-2.elb.amazonaws.com',
+        security: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com',
+        postgres: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com/dashboardwrapper',
         cii: 'https://conclave-cii-testing-talkative-oryx-hh.london.cloudapps.digital',
         wrapper: {
           apiGatewayEnabled: {
-            user: 'http://ppg-sand-wrapper-alb-1485365645.eu-west-2.elb.amazonaws.com/user-profiles',
-            organisation: 'http://ppg-sand-wrapper-alb-1485365645.eu-west-2.elb.amazonaws.com/organisation-profiles',
-            contact: 'http://ppg-sand-wrapper-alb-1485365645.eu-west-2.elb.amazonaws.com/contacts',
-            configuration: 'http://ppg-sand-wrapper-alb-1485365645.eu-west-2.elb.amazonaws.com/configurations',
-            dataMigration: 'http://ppg-sand-wrapper-alb-1485365645.eu-west-2.elb.amazonaws.com/datamigration',
+            user: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com/wrapper/user-profiles',
+            organisation: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com/wrapper/organisation-profiles',
+            contact: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com/wrapper/contacts',
+            configuration: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com/wrapper/configurations',
+            dataMigration: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com/wrapper/datamigration',
           },
           apiGatewayDisabled: {
-            user: 'http://ppg-sand-wrapper-alb-1485365645.eu-west-2.elb.amazonaws.com/users',
-            organisation: 'http://ppg-sand-wrapper-alb-1485365645.eu-west-2.elb.amazonaws.com/organisations',
-            contact: 'http://ppg-sand-wrapper-alb-1485365645.eu-west-2.elb.amazonaws.com/contacts',
-            configuration: 'http://ppg-sand-wrapper-alb-1485365645.eu-west-2.elb.amazonaws.com/configurations',
-            dataMigration: 'http://ppg-sand-wrapper-alb-1485365645.eu-west-2.elb.amazonaws.com/datamigration',
+            user: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com/wrapper/users',
+            organisation: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com/wrapper/organisations',
+            contact: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com/wrapper/contacts',
+            configuration: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com/wrapper/configurations',
+            dataMigration: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com/wrapper/datamigration',
           }
         }
       },
       web: {
-        dashboard: 'http://ppg-sand-ccs-sso-alb-770694470.eu-west-2.elb.amazonaws.com'
+        dashboard: 'http://sand-alb-frontend-1806931995.eu-west-2.elb.amazonaws.com'
       },
       ccsContactUrl: "https://www.crowncommercial.gov.uk/contact"
     },
