@@ -1,8 +1,8 @@
 {
-    "family": "dev-ccs-sso",
+    "family": "%SPACE%-ccs-sso",
     "networkMode": "awsvpc",
-    "taskRoleArn": "arn:aws:iam::111314917260:role/ecsTaskExecutionRole",
-    "executionRoleArn": "arn:aws:iam::111314917260:role/ecsTaskExecutionRole",
+    "taskRoleArn": "arn:aws:iam::%AWS_ACCOUNT_ID%:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::%AWS_ACCOUNT_ID%:role/ecsTaskExecutionRole",
     "runtimePlatform": {
         "operatingSystemFamily": "LINUX"
     },
@@ -13,8 +13,8 @@
     "memory": "512",
     "containerDefinitions": [
         {
-            "name": "sand-ccs-sso",
-            "image": "111314917260.dkr.ecr.eu-west-2.amazonaws.com/demo-angular:latest",
+            "name": "%SPACE%-ccs-sso",
+            "image": "%AWS_ACCOUNT_ID%.dkr.ecr.eu-west-2.amazonaws.com/%SPACE%-angular:%SPACE%-angular-%BUILD_NUMBER%",
             "cpu": 0,
             "memoryReservation": 512,
             "portMappings": [
@@ -33,7 +33,7 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-group": "/ecs/dev-ccs-sso",
+                    "awslogs-group": "/ecs/%SPACE%-angular",
                     "awslogs-region": "eu-west-2",
                     "awslogs-stream-prefix": "ecs"
                 }
