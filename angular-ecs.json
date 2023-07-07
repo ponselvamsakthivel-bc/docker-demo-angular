@@ -13,7 +13,7 @@
     "memory": "512",
     "containerDefinitions": [
         {
-            "name": "%SPACE%-security",
+            "name": "%SPACE%-angular",
             "image": "%AWS_ACCOUNT_ID%.dkr.ecr.eu-west-2.amazonaws.com/%SPACE%-angular:%SPACE%-angular-%BUILD_NUMBER%",
             "cpu": 0,
             "memoryReservation": 512,
