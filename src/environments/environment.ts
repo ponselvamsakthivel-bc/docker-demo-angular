@@ -5,7 +5,7 @@ export const environment = {
       api: {
         isApiGateWayEnabled: false,
         security: 'https://sbx.api.crowncommercial.gov.uk/security',
-        postgres: 'https://sbx.api.crowncommercial.gov.uk/dashboardwrapper',
+        postgres: 'https://sand-api-core.london.cloudapps.digital',
         cii: 'https://conclave-cii-testing-talkative-oryx-hh.london.cloudapps.digital',
         wrapper: {
           apiGatewayEnabled: {
