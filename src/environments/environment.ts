@@ -4,23 +4,23 @@ export const environment = {
     uri: {
       api: {
         isApiGateWayEnabled: false,
-        security: 'https://sand-api-security.london.cloudapps.digital',
-        postgres: 'https://sand-api-core.london.cloudapps.digital',
+        security: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5004',
+        postgres: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5001',
         cii: 'https://conclave-cii-testing-talkative-oryx-hh.london.cloudapps.digital',
         wrapper: {
           apiGatewayEnabled: {
-            user: 'https://sand-api-wrapper.london.cloudapps.digital/user-profiles',
-            organisation: 'https://sand-api-wrapper.london.cloudapps.digital/organisation-profiles',
-            contact: 'https://sand-api-wrapper.london.cloudapps.digital/contacts',
-            configuration: 'https://sand-api-wrapper.london.cloudapps.digital/configurations',
-            dataMigration: 'https://sand-api-wrapper.london.cloudapps.digital/datamigration',
+            user: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/user-profiles',
+            organisation: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/organisation-profiles',
+            contact: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/contacts',
+            configuration: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/configurations',
+            dataMigration: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/datamigration',
           },
           apiGatewayDisabled: {
-            user: 'https://sand-api-wrapper.london.cloudapps.digital/wrapper/users',
-            organisation: 'https://sand-api-wrapper.london.cloudapps.digital/organisations',
-            contact: 'https://sand-api-wrapper.london.cloudapps.digital/contacts',
-            configuration: 'https://sand-api-wrapper.london.cloudapps.digital/configurations',
-            dataMigration: 'https://sand-api-wrapper.london.cloudapps.digital/datamigration',
+            user: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/users',
+            organisation: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/organisations',
+            contact: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/contacts',
+            configuration: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/configurations',
+            dataMigration: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/datamigration',
           }
         }
       },
