@@ -4,23 +4,23 @@ export const environment = {
     uri: {
       api: {
         isApiGateWayEnabled: false,
-        security: 'http://10.0.0.21:5004',
-        postgres: 'http://10.0.0.21:5001',
+        security: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5004',
+        postgres: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5001',
         cii: 'https://conclave-cii-testing-talkative-oryx-hh.london.cloudapps.digital',
         wrapper: {
           apiGatewayEnabled: {
-            user: 'http://10.0.0.21:5000/user-profiles',
-            organisation: 'http://10.0.0.21:5000/organisation-profiles',
-            contact: 'http://10.0.0.21:5000/contacts',
-            configuration: 'http://10.0.0.21:5000/configurations',
-            dataMigration: 'http://10.0.0.21:5000/datamigration',
+            user: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/user-profiles',
+            organisation: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/organisation-profiles',
+            contact: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/contacts',
+            configuration: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/configurations',
+            dataMigration: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/datamigration',
           },
           apiGatewayDisabled: {
-            user: 'http://10.0.0.21:5000/users',
-            organisation: 'http://10.0.0.21:5000/organisations',
-            contact: 'http://10.0.0.21:5000/contacts',
-            configuration: 'http://10.0.0.21:5000/configurations',
-            dataMigration: 'http://10.0.0.21:5000/datamigration',
+            user: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/users',
+            organisation: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/organisations',
+            contact: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/contacts',
+            configuration: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/configurations',
+            dataMigration: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/datamigration',
           }
         }
       },
