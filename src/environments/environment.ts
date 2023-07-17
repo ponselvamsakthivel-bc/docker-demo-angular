@@ -1,31 +1,31 @@
 export const environment = {
     production: true,
-    idam_client_id:'CWwA7Q84GPlD1nF4ufxo6IDO6PIItiyS',
+    idam_client_id:'5G2pNShwaBQzjJNx6fCSqt9ZIAU9sEur',
     uri: {
       api: {
         isApiGateWayEnabled: false,
-        security: 'https://sbx.api.crowncommercial.gov.uk/security',
-        postgres: 'https://sbx.api.crowncommercial.gov.uk/dashboardwrapper',
+        security: 'http://dev-alb-backend-295506639.eu-west-2.elb.amazonaws.com:5004',
+        postgres: 'http://dev-alb-backend-295506639.eu-west-2.elb.amazonaws.com:5001',
         cii: 'https://conclave-cii-testing-talkative-oryx-hh.london.cloudapps.digital',
         wrapper: {
           apiGatewayEnabled: {
-            user: 'https://sbx.api.crowncommercial.gov.uk/wrapper/user-profiles',
+            user: 'http://dev-alb-backend-295506639.eu-west-2.elb.amazonaws.com:5000/user-profiles',
             organisation: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/organisation-profiles',
-            contact: 'https://sbx.api.crowncommercial.gov.uk/wrapper/contacts',
-            configuration: 'https://sbx.api.crowncommercial.gov.uk/wrapper/configurations',
-            dataMigration: 'https://sbx.api.crowncommercial.gov.uk/wrapper/datamigration',
+            contact: 'http://dev-alb-backend-295506639.eu-west-2.elb.amazonaws.com:5000/contacts',
+            configuration: 'http://dev-alb-backend-295506639.eu-west-2.elb.amazonaws.com:5000/configurations',
+            dataMigration: 'http://dev-alb-backend-295506639.eu-west-2.elb.amazonaws.com:5000/datamigration',
           },
           apiGatewayDisabled: {
-            user: 'https://sbx.api.crowncommercial.gov.uk/wrapper/users',
-            organisation: 'https://sbx.api.crowncommercial.gov.uk/wrapper/organisations',
-            contact: 'https://sbx.api.crowncommercial.gov.uk/wrapper/contacts',
-            configuration: 'https://sbx.api.crowncommercial.gov.uk/wrapper/configurations',
-            dataMigration: 'https://sbx.api.crowncommercial.gov.uk/wrapper/datamigration',
+            user: 'http://dev-alb-backend-295506639.eu-west-2.elb.amazonaws.com:5000/users',
+            organisation: 'http://dev-alb-backend-295506639.eu-west-2.elb.amazonaws.com:5000/organisations',
+            contact: 'http://dev-alb-backend-295506639.eu-west-2.elb.amazonaws.com:5000/contacts',
+            configuration: 'http://dev-alb-backend-295506639.eu-west-2.elb.amazonaws.com:5000/configurations',
+            dataMigration: 'http://dev-alb-backend-295506639.eu-west-2.elb.amazonaws.com:5000/datamigration',
           }
         }
       },
       web: {
-        dashboard: 'https://sand.identify.crowncommercial.gov.uk'
+        dashboard: 'http://dev-alb-frontend-1521951989.eu-west-2.elb.amazonaws.com'
       },
       ccsContactUrl: "https://www.crowncommercial.gov.uk/contact"
     },
@@ -33,7 +33,7 @@ export const environment = {
     cookieExpirationTimeInMinutes: 525600,
     bulkUploadPollingFrequencyInSeconds: 5,
     bulkUploadMaxFileSizeInBytes:1048576,
-    bulkUploadTemplateFileUrl: 'https://sbx.api.crowncommercial.gov.uk/templates/DataMigrationTemplate.csv',
+    bulkUploadTemplateFileUrl: 'https://dev.api.crowncommercial.gov.uk/templates/DataMigrationTemplate.csv',
     usedPasswordThreshold: 5, //This value should be changed when Auth0 password history policy changed,
     listPageSize: 10,
     mailDecryptKey:'conclavesimpleemailencrypt',
