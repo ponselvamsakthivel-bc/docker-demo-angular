@@ -4,28 +4,28 @@ export const environment = {
     uri: {
       api: {
         isApiGateWayEnabled: false,
-        security: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5004',
-        postgres: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5001',
+        security: 'https://sbx.api.crowncommercial.gov.uk/security',
+        postgres: 'https://sbx.api.crowncommercial.gov.uk/dashboardwrapper',
         cii: 'https://conclave-cii-testing-talkative-oryx-hh.london.cloudapps.digital',
         wrapper: {
           apiGatewayEnabled: {
-            user: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/user-profiles',
+            user: 'https://sbx.api.crowncommercial.gov.uk/wrapper/user-profiles',
             organisation: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/organisation-profiles',
-            contact: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/contacts',
-            configuration: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/configurations',
-            dataMigration: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/datamigration',
+            contact: 'https://sbx.api.crowncommercial.gov.uk/wrapper/contacts',
+            configuration: 'https://sbx.api.crowncommercial.gov.uk/wrapper/configurations',
+            dataMigration: 'https://sbx.api.crowncommercial.gov.uk/wrapper/datamigration',
           },
           apiGatewayDisabled: {
-            user: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/users',
-            organisation: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/organisations',
-            contact: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/contacts',
-            configuration: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/configurations',
-            dataMigration: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/datamigration',
+            user: 'https://sbx.api.crowncommercial.gov.uk/wrapper/users',
+            organisation: 'https://sbx.api.crowncommercial.gov.uk/wrapper/organisations',
+            contact: 'https://sbx.api.crowncommercial.gov.uk/wrapper/contacts',
+            configuration: 'https://sbx.api.crowncommercial.gov.uk/wrapper/configurations',
+            dataMigration: 'https://sbx.api.crowncommercial.gov.uk/wrapper/datamigration',
           }
         }
       },
       web: {
-        dashboard: 'http://sand-alb-frontend-1806931995.eu-west-2.elb.amazonaws.com'
+        dashboard: 'https://sand.identify.crowncommercial.gov.uk'
       },
       ccsContactUrl: "https://www.crowncommercial.gov.uk/contact"
     },
