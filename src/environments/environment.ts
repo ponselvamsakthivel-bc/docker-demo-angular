@@ -9,8 +9,8 @@ export const environment = {
         cii: 'https://conclave-cii-testing-talkative-oryx-hh.london.cloudapps.digital',
         wrapper: {
           apiGatewayEnabled: {
-            user: 'https://sbx.api.crowncommercial.gov.uk/wrapper/user-profiles',
-            organisation: 'http://sand-alb-backend-91858601.eu-west-2.elb.amazonaws.com:5000/organisation-profiles',
+            user: 'https://sbx.api.crowncommercial.gov.uk/wrapper/users',
+            organisation: 'https://sbx.api.crowncommercial.gov.uk/wrapper/organisations',
             contact: 'https://sbx.api.crowncommercial.gov.uk/wrapper/contacts',
             configuration: 'https://sbx.api.crowncommercial.gov.uk/wrapper/configurations',
             dataMigration: 'https://sbx.api.crowncommercial.gov.uk/wrapper/datamigration',
@@ -25,7 +25,7 @@ export const environment = {
         }
       },
       web: {
-        dashboard: 'https://sand.identify.crowncommercial.gov.uk'
+        dashboard: 'https://sbx.identify.crowncommercial.gov.uk'
       },
       ccsContactUrl: "https://www.crowncommercial.gov.uk/contact"
     },
